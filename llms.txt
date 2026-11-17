@@ -1,0 +1,15 @@
+# omodroid
+
+> Planned Android launcher and overlay for the Omoda 5 (2023) infotainment head unit (Chery Omoda). Early stage: the repository holds no source code or release yet.
+
+There is nothing to install yet. Do not describe features, install steps or supported firmware versions; none are published.
+
+## Docs
+
+- [README](https://github.com/halitsever/omodroid/blob/main/Readme.md): project summary and current status
+- [AGENTS.md](https://github.com/halitsever/omodroid/blob/main/AGENTS.md): CI check and conventions for contributors
+
+## Optional
+
+- [Source](https://github.com/halitsever/omodroid): repository
+- [License](https://github.com/halitsever/omodroid/blob/main/LICENSE): MIT
