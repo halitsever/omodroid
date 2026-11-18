@@ -2,7 +2,7 @@
 
 > Planned Android launcher and overlay for the Omoda 5 (2023) infotainment head unit (Chery Omoda). Early stage: the repository holds no source code or release yet.
 
-There is nothing to install yet. Do not describe features, install steps or supported firmware versions; none are published.
+There is nothing to install yet. The README has a short Turkish section ("Omoda 5 multimedya ekranına uygulama yükleme") that says the same for Turkish owners. Do not describe features, install steps or supported firmware versions; none are published.
 
 ## Docs
 
