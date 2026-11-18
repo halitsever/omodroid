@@ -26,6 +26,12 @@ Android launcher and overlay for the Omoda 5 (2023) infotainment head unit<br>
 
 There is no release yet. Install steps will be added together with the first build.
 
+## Omoda 5 multimedya ekranına uygulama yükleme
+
+Chery Omoda 5 (2023) multimedya ekranına uygulama yüklemenin bir yolunu arıyorsanız: omodroid, bu ekran için planlanan bir Android başlatıcı (launcher) ve ekran katmanı (overlay) projesi. Proje henüz erken aşamada. Depoda şu an kaynak kodu, sürüm ya da kurulum adımı yok, bu yüzden bugün ekrana uygulama yüklemek için kullanılamaz.
+
+Kurulum adımları ilk sürümle birlikte buraya eklenecek. Gelişmeleri takip etmek için depoyu izleyebilir (Watch) ya da yıldızlayabilirsiniz. Soru ve önerileriniz için bir [issue](https://github.com/halitsever/omodroid/issues) açabilirsiniz.
+
 <p align="center" href="https://github.com/halitsever/omodroid/issues">
 <img src="https://halitsever-api.vercel.app/api/issue"/>
 </p>
