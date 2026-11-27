@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 
-const site = "https://halitsever.github.io/omodroid/";
+const site = "https://projects.halit.org/omodroid/";
 const repo = "https://github.com/halitsever/omodroid";
 const homeTitle = "Omodroid: planned Android launcher for Omoda 5 head unit";
 const description = "Omodroid is a planned open source Android car launcher and overlay for the Omoda 5 (2023) head unit. Early stage: no code and nothing to download yet.";
@@ -30,7 +30,7 @@ export default defineConfig({
   sitemap: { hostname: site },
 
   head: [
-    /** Cloudflare Web Analytics, one token for every page on halitsever.github.io. */
+    /** Cloudflare Web Analytics, one token for every page on projects.halit.org. */
     ["script", { defer: "", src: "https://static.cloudflareinsights.com/beacon.min.js", "data-cf-beacon": '{"token": "dd7e54d3f48841c187d72d9dbb92a6b6"}' }],
     ["link", { rel: "icon", href: "/omodroid/favicon.png", sizes: "32x32", type: "image/png" }],
     ["link", { rel: "icon", href: "/omodroid/favicon.svg", type: "image/svg+xml" }],

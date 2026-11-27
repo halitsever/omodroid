@@ -10,7 +10,7 @@ Android launcher and overlay for the Omoda 5 (2023) infotainment head unit<br>
 <img src="https://img.shields.io/github/sponsors/halitsever" alt="GitHub Sponsors"/>
 </p>
 <p align="center">
-<a align="center" href="https://halitsever.github.io/omodroid/">Documentation</a>
+<a align="center" href="https://projects.halit.org/omodroid/">Documentation</a>
   </p>
 </p>
 

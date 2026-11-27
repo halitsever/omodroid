@@ -9,7 +9,7 @@ omodroid is a planned Android launcher and overlay for the Omoda 5 (2023) infota
 
 ## Docs site
 
-- The project website is a VitePress site in `docs/`, published to https://halitsever.github.io/omodroid/ by `.github/workflows/docs.yml`.
+- The project website is a VitePress site in `docs/`, published to https://projects.halit.org/omodroid/ by `.github/workflows/docs.yml`.
 - Build it with `cd docs && npm ci && npm run build`. `npm run dev` starts a local server.
 - The site follows the same rule as the README: it says the project is planned and lists no features, install steps or head unit details.
 
