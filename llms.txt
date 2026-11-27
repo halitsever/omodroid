@@ -6,6 +6,7 @@ There is nothing to install yet. The README has a short Turkish section ("Omoda 
 
 ## Docs
 
+- [Website](https://halitsever.github.io/omodroid/): project status, how to follow or contribute, and a general explainer on Android car launchers
 - [README](https://github.com/halitsever/omodroid/blob/main/Readme.md): project summary and current status
 - [AGENTS.md](https://github.com/halitsever/omodroid/blob/main/AGENTS.md): CI check and conventions for contributors
 
