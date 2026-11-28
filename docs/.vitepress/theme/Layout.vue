@@ -3,7 +3,7 @@ import { computed } from "vue";
 import { Content, useData, useRoute, withBase } from "vitepress";
 import HomePage from "./HomePage.vue";
 import TitleBlock from "./TitleBlock.vue";
-import { repoUrl, sheets } from "./sheet";
+import { blogLink, repoUrl, sheets } from "./sheet";
 
 const { frontmatter, page } = useData();
 const route = useRoute();
@@ -11,6 +11,8 @@ const route = useRoute();
 const isHome = computed(() => frontmatter.value.layout === "home");
 const others = computed(() => sheets.filter((s) => s.link !== "/" + page.value.relativePath.replace(/(index)?\.md$/, "")));
 const isCurrent = (link: string) => route.path.replace(/\.html$/, "") === withBase(link);
+const inBlog = computed(() => route.path.startsWith(withBase(blogLink)));
+const turkish = computed(() => frontmatter.value.lang === "tr");
 </script>
 
 <template>
@@ -26,11 +28,16 @@ const isCurrent = (link: string) => route.path.replace(/\.html$/, "") === withBa
       </a>
       <nav aria-label="Main">
         <a v-for="s in sheets.slice(1)" :key="s.link" :href="withBase(s.link)" :aria-current="isCurrent(s.link) ? 'page' : undefined">{{ s.label }}</a>
+        <a :href="withBase(blogLink)" :aria-current="inBlog ? 'page' : undefined">Blog</a>
         <a :href="repoUrl">GitHub</a>
       </nav>
     </header>
 
-    <p class="notice" role="note">
+    <p v-if="turkish" class="notice" role="note" lang="tr">
+      <strong>Planlanan proje.</strong>
+      Depoda henüz kod yok ve indirilecek bir sürüm bulunmuyor.
+    </p>
+    <p v-else class="notice" role="note">
       <strong>Planned project.</strong>
       There is no code in the repository and nothing to download yet.
     </p>
@@ -43,10 +50,10 @@ const isCurrent = (link: string) => route.path.replace(/\.html$/, "") === withBa
       </div>
       <HomePage v-else-if="isHome" />
       <template v-else>
-        <TitleBlock compact :sheet="frontmatter.sheet" />
+        <TitleBlock v-if="frontmatter.sheet" compact :sheet="frontmatter.sheet" />
         <Content class="doc" />
         <nav class="more" aria-label="Other sheets">
-          <span class="label">Other sheets</span>
+          <span class="label">{{ turkish ? "Diğer sayfalar" : "Other sheets" }}</span>
           <a v-for="s in others" :key="s.link" :href="withBase(s.link)">{{ s.label }}</a>
         </nav>
       </template>

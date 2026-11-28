@@ -107,6 +107,10 @@ const contents = [
         If you are new to the category, the explainer on <a :href="withBase('/android-car-launcher')">what an Android car launcher is</a> covers launchers and overlays on Android
         head units in general terms.
       </p>
+      <p>
+        The <a :href="withBase('/omoda-5-launcher')">Omoda 5 launcher page</a> collects what Chery's documents say about the screen, and the
+        <a :href="withBase('/blog/')">blog</a> has background notes on Android Auto, head units and CAN bus wiring.
+      </p>
     </section>
 
     <section>

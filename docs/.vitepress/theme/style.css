@@ -518,6 +518,17 @@ th {
   color: var(--ink);
 }
 
+.doc .post-meta {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--dim);
+}
+
+.doc .lead {
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
 .doc strong {
   color: var(--ink);
   font-weight: 600;
